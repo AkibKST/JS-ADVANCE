@@ -23,3 +23,22 @@ const myAddFunction = (firstNum, secondNum, ...rest) =>{
 };
 
 myAddFunction(1, 2, 3, 4, 5, 6);
+
+// and with function
+
+const myObj = {
+    name: "Akib",
+    position: "Software Engineer"
+}
+
+const myAnotherObj = {
+    age : 25,
+    location: "Kushtia" 
+}
+
+const myFinalObj ={
+    ...myObj,
+    ...myAnotherObj
+}
+
+console.log(myFinalObj);
