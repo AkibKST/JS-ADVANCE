@@ -10,3 +10,16 @@ console.log(myArray);
 console.log(myCopiedArray);
 
 // ---REST_OPERATOR---
+const myAddFunction = (firstNum, secondNum, ...rest) =>{
+    console.log(firstNum);
+    console.log(secondNum);
+    console.log(rest);
+
+    let sum = 0;
+    rest.forEach((num)=>{
+        sum = sum + num;
+    });
+    console.log(sum);
+};
+
+myAddFunction(1, 2, 3, 4, 5, 6);
